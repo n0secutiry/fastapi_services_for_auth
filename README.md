@@ -20,21 +20,10 @@ Testing: Pytest, pytest-asyncio, Coverage
 Create a .env file in the root directory:
 
 ```bash
-DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/fastapi_db
-SECRET_KEY=SECRET_KEY
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-REFRESH_TOKEN_EXPIRE_MINUTES=10080
-
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-POSTGRES_DB=fastapi_db
-
-TEST_DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/fastapi_test_db
-
-ENV_MODE=local
+cp .env.example .env
 ```
-```
+Run server
+```bash
 docker compose up --build -d
 ```
 Apply database migrations:
