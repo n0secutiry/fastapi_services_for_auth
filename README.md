@@ -51,4 +51,3 @@ To run the test suite:
 ```bash
 docker compose exec web python -m pytest -v
 ```
-# fastapi_services_for_auth
